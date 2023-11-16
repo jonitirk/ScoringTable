@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Scoring Table</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+
+<body>
+	<h1>Add new player to the database</h1>
+	<div>
+		<form th:object="${player}" th:action="@{/save}" action="#" method="post">
+			<label for="firstName">First Name</label>
+			<input type="text" id="firstName" th:field="*{firstName}" />
+			<label for="lastName">Last Name</label>
+			<input type="text" id="lastName" th:field="*{lastName}" />
+			<label for="pyear">Goals</label>
+			<input type="text" id="goals" th:field="*{goals}" />
+			<label for="pyear">Assists</label>
+			<input type="text" id="assists" th:field="*{assists}" />
+
+
+			<div style="clear: both; display: block; height: 10px;"></div>
+			<label for="teamlist">Teams</label>
+			<select id="teamlist" th:field="*{team}" class="form-control">
+				<option th:each="team: ${teams}" th:value=" ${team.team_id}" th:text="${team.name}">
+				</option>
+			</select>
+
+			<div style="clear: both; display: block; height: 10px;"></div>
+			<input type="submit" value="Save"></input>
+		</form>
+	</div>
+
+</body>
+
+</html>
