@@ -1,5 +1,28 @@
 The app can be found at https://scoringtable-4eec9f6d9315.herokuapp.com/ 
 
+Application description:
+
+This is a simple fantasy sports app where you can enter a player's first name, last name, goals, assists, and team. Points are calculated by combining goals and assists, and players are displayed in the app in order of who has the most points. Admin users can edit player information and perform CRUD operations, including adding or removing players. In this version, it's also possible to input an anonymous player. Teams have their own page where admin users can add teams. Editing or deleting teams is not possible in this version.
+
+Technical specifications:
+
+It's a Spring Boot Maven project using the MVC architecture. Views are created using Thymeleaf templates with some CSS for UI styling.
+
+The application's database is the H2 test database. JPA is used to create database functionalities. Test data are preloaded into the application and logged.
+
+The application includes a RestController.java, enabling the use of RESTful methods for some functionalities (not all functionalities are implemented with REST methods). Auto-generated Spring DATA REST URLs are available at the /api endpoint.
+
+The application includes the Spring Security dependency, securing specific URLs and methods so that only users with the admin role can access them. User passwords are encrypted. For testing purposes, the H2 console is not secured.
+
+There are also a few JUnit test methods in the application.
+
+This application has been published on GitHub to give employers an insight into my programming skills. For this reason, the repository is public, and for testing purposes, the application's usernames and passwords are the following:
+
+Username: User, Password: User 
+Username: Admin, Password: Admin
+
+Screenshots of the application:
+
 ![sign_in](https://github.com/jonitirk/ScoringTable/assets/89454122/947311de-94a3-4c0f-ba00-e0d86c53fda5)
 
 ![user_players](https://github.com/jonitirk/ScoringTable/assets/89454122/cf31a67b-6b5e-46d6-a475-54d6f74024ac)
