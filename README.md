@@ -1,10 +1,10 @@
 The app can be found at https://scoringtable-4eec9f6d9315.herokuapp.com/ 
 
-Application description:
+## Application description:
 
 This is a simple fantasy sports app where you can enter a player's first name, last name, goals, assists, and team. Points are calculated by combining goals and assists, and players are displayed in the app in order of who has the most points. Admin users can edit player information and perform CRUD operations, including adding or removing players. In this version, it's also possible to input an anonymous player. Teams have their own page where admin users can add teams. Editing or deleting teams is not possible in this version.
 
-Technical specifications:
+## Technical specifications:
 
 It's a Spring Boot Maven project using the MVC architecture. Views are created using Thymeleaf templates with some CSS for UI styling.
 
