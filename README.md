@@ -19,6 +19,7 @@ There are also a few JUnit test methods in the application.
 This application has been published on GitHub to give employers an insight into my programming skills. For this reason, the repository is public, and for testing purposes, the application's usernames and passwords are the following:
 
 Username: User, Password: User 
+
 Username: Admin, Password: Admin
 
 Screenshots of the application:
