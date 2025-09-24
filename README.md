@@ -1,5 +1,3 @@
-The app can be found at https://scoringtable-4eec9f6d9315.herokuapp.com/ 
-
 ## Application description:
 
 This is a simple fantasy sports app where you can enter a player's first name, last name, goals, assists, and team. Points are calculated by combining goals and assists, and players are displayed in the app in order of who has the most points. Admin users can edit player information and perform CRUD operations, including adding or removing players. In this version, it's also possible to input an anonymous player. Teams have their own page where admin users can add teams. Editing or deleting teams is not possible in this version.
@@ -16,11 +14,6 @@ The application includes the Spring Security dependency, securing specific URLs 
 
 There are also a few JUnit test methods in the application.
 
-This application has been published on GitHub to give employers an insight into my programming skills. For this reason, the repository is public, and for testing purposes, the application's usernames and passwords are the following:
-
-Username: User, Password: User 
-
-Username: Admin, Password: Admin
 
 Screenshots of the application:
 
